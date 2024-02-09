@@ -5,6 +5,13 @@ ruby "3.2.2"
 # CORS
 gem "rack-cors"
 
+# Authentication
+gem "devise"
+gem "devise-jwt"
+
+# Serialization
+gem "jsonapi-serializer"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3"
 
