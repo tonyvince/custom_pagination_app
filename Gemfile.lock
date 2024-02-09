@@ -160,6 +160,7 @@ GEM
     nokogiri (1.16.2-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    pagy (6.4.3)
     parallel (1.24.0)
     parser (3.3.0.5)
       ast (~> 2.4.1)
@@ -290,6 +291,7 @@ DEPENDENCIES
   devise
   devise-jwt
   jsonapi-serializer
+  pagy
   puma (>= 5.0)
   rack-cors
   rails (~> 7.1.3)
