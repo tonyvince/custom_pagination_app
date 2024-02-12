@@ -23,7 +23,7 @@ RSpec.describe "Api::V1::Users", type: :request do
     end
 
     it "returns pagination metadata" do
-      expect(json_response['pagination']).to include("items", "position", "has_more")
+      expect(json_response['pagination']).to include("items", "position", "has_more", "next_cursor")
     end
   end
 end
