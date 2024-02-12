@@ -23,6 +23,7 @@ class Api::V1::UsersController < Api::V1::ApiController
     {
       items: pagination.items,
       position: pagination.position,
+      next_cursor: pagination.next_cursor,
       has_more: pagination.has_more?
     }
   end
