@@ -15,9 +15,6 @@ gem "jsonapi-serializer"
 # Linter
 gem "standardrb"
 
-# Pagination
-gem "pagy_cursor"
-
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3"
 
