@@ -3,12 +3,6 @@ class Api::V1::UsersController < Api::V1::ApiController
   include CursorPaginatable
 
   def index
-    # @pagy, @users = pagy_cursor(
-    #   User.all,
-    #   order: {id: :asc},
-    #   after: params[:after],
-    #   items: params[:items] || User::PER_PAGE
-    # )
     @pagination, @users = paginate_with_cursor(
       User.all,
       by: :id,
