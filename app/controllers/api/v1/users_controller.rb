@@ -3,7 +3,8 @@ class Api::V1::UsersController < Api::V1::ApiController
 
   def index
     @pagy, @users = pagy_cursor(
-      User.all.order(updated_at: :desc),
+      User.all,
+      order: {id: :asc},
       after: params[:after],
       items: params[:items] || User::PER_PAGE
     )
